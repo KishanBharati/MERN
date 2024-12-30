@@ -19,7 +19,23 @@
             font-size: 50px;
             text-align: center;
         }
+        button
+        {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .mybtn
+        {
+            background-color: green !important;
+        }
+        #unique-btn
+        {
+            background-color: blueviolet;
+        }
+
     </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -27,11 +43,16 @@
     <h1 style=" color: red; font-size: 30px;" >Inline CSS is used to style individual tags only. </h1>
 
     <p>Internal CSS is used to Style entire page once</p>
+
     <p class="myclass">Name Selector is used to select element by their tag name</p>
 
     <h2 class="myclass">Class Selector is used to select elements by their class name </h2>
 
     <h3 id="myid">Id selector is used to select elements by their id name</h3>
 
+    <button class="mybtn" id="unique-btn" style="background-color: blue;">Priority</button>
+    
+    <button class="btn">Using external CSS</button>
+    
 </body>
 </html>
