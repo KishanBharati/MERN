@@ -9,12 +9,18 @@
 
     <style>
 
+        :root{
+            --theme-color: crimson;
+            --theme-color-dard: red;
+        }
+
+
         * {
             font-family: Roboto;
         }
 
         .card{
-            border: 2px solid aqua;
+            border: 1px solid var(--theme-color);
             background-color: white;
             width: 20%;
             padding: 40px;
@@ -61,8 +67,8 @@
             display: block;
             width: 100%;
             font-weight: bold;
-            background-color: aqua;
-            color: ;
+            background-color: var(--theme-color);
+            color: white;
             padding: 10px;
             border-radius: 5px;
             border: none;
@@ -70,7 +76,7 @@
         }
 
         .btn:hover{
-            background-color: aqua;
+            background-color: var(--theme-color-dard);
             transform: translateY(-2px);
             box-shadow: 1px 1px 5px 1px #0000005b;
 
@@ -79,7 +85,7 @@
         .link{
             display: block;
             margin: 10px 0;
-            color: black;
+            color: var(--theme-color);
             font-weight: bold;
             text-decoration: none;
         }
