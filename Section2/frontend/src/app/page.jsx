@@ -1,5 +1,7 @@
 import Button from '@/components/Button';
+import Card from '@/components/Card';
 import React from 'react'
+
 
 const Home = () => {
   return (
@@ -19,6 +21,12 @@ const Home = () => {
 
       <Button>Login</Button>
       <Button disabled={true} >Signup</Button>
+
+      <Card
+      title="My Card"
+      description="My Description"
+      primaryText="Ok"
+      secondaryText="Cancel" />
 
     </div>
   )
