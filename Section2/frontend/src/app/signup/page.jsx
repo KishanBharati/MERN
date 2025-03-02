@@ -9,6 +9,18 @@ const SignupSchema = Yup.object().shape({
     .max(50, 'Too Long!')
     .required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
+
+  password : Yup.string().required('Password is Required')
+  .matches(/[a-z]/, 'password must contain lowercase letter')
+  .matches(/[A-Z]/, 'password must conatin uppercase letter')
+  .matches(/[0-9]/, 'password must conatin number')
+  .matches(/\W/, 'password must conatin special characters')
+  .min(8, 'Password must be at least 8 characters'),
+
+  confirmPassword: Yup.string()
+  .oneOf([Yup.ref('password'), null], 'Passwords must match')
+  .required('Password confirm is required')
+  
 });
 
 const Signup = () => {
